@@ -52,15 +52,15 @@
     <div class="form-container sign-up-container">
         <form method="POST" action="{{ url('/signIn') }}">
 			@csrf
-            <h1>Create Account</h1>
+            <h2>Create Account</h2>
 
-            <div class="social-container">
+            <!-- <div class="social-container">
                 <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
                 <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
             </div>
 
-            <span>or use your email for registration</span>
+            <span>or use your email for registration</span> -->
             <div>
                 <input name="name" type="text" placeholder="Enter Your Name"/>
                 <span class="text-danger">
@@ -83,6 +83,26 @@
                      {{ $message }}
                  @enderror
                 </span>
+            </div>
+			<div>
+				<input type="number" name="age" placeholder="Enter Age">
+				<span class="text-danger">
+                 @error("age")
+                     {{ $message }}
+                 @enderror
+                </span>
+			</div>
+			<div>
+                <select name="role" id="role">
+                  <option value="" disabled selected>Select Role</option>
+                  <option value="user">User</option>
+                  <option value="admin">Admin</option>
+                </select>
+				<span class="text-danger">
+                  @error("role")
+                     {{ $message }}
+                  @enderror
+              </span>
             </div>
             <button type="submit">Sign Up</button>
         </form>
