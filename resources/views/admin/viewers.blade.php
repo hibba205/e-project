@@ -14,13 +14,18 @@
           <a class="nav-link" href="{{ url('/admin/dashboard') }}"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url('/movie') }}"><i class="bi bi-film me-2"></i>Movies</a>
+          <a class="nav-link" href="{{ url('/admin/movies') }}"><i class="bi bi-film me-2"></i>Movies</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url('/theaters') }}"><i class="bi bi-building me-2"></i>Theaters</a>
+          <a class="nav-link" href="{{ url('/admin/theaters') }}"><i class="bi bi-building me-2"></i>Theaters</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="{{ url('/admin/viewers') }}"><i class="bi bi-people me-2"></i>Users</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="{{ url('/admin/booking') }}">
+            <i class="bi bi-people me-2"></i> Booking
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
@@ -52,28 +57,6 @@
             </tr>
           </thead>
           <tbody>
-            <!-- <tr>
-              <td>#1</td>
-              <td>John Doe</td>
-              <td>john@example.com</td>
-              <td>2024-06-10</td>
-              <td>
-                <button class="btn btn-info btn-sm"><i class="bi bi-pencil"></i></button>
-                <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
-              </td>
-            </tr>
-            <tr>
-              <td>#2</td>
-              <td>Jane Smith</td>
-              <td>jane@example.com</td>
-              <td>2024-06-09</td>
-              <td>
-                <button class="btn btn-info btn-sm"><i class="bi bi-pencil"></i></button>
-                <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
-              </td>
-            </tr>
-            You can dynamically load more users here -->
-
             @foreach ($users as $user)
             <tr>
               <td>{{ $user->id }}</td>

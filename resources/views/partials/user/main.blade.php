@@ -11,6 +11,13 @@
 	<link rel="stylesheet" href="{{ asset('user/assets/css/style-starter.css') }}">
 	<link href="//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap"
 		rel="stylesheet">
+		<style>
+			.bg-purple { background-color: #dc3545; }
+.text-purple { color: #dc3545; }
+.btn-purple { background-color: #dc3545; color:#fff; }
+.btn-purple:hover { background-color: #dc3545; }
+
+		</style>
 </head>
 
 <body>

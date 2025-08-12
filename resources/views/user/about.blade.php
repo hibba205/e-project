@@ -60,8 +60,6 @@
 						molestiae ad eius accusantium? Nulla dolorem perferendis inventore! posuere cubilia Curae;
 						Nunc non risus in justo convallis feugiat.</p>
 					<div class="ready-more mt-4">
-						<a href="#" class="btn read-button">Read More <span class="fa fa-angle-double-right ml-2"
-								aria-hidden="true"></span></a>
 					</div>
 				</div>
 			</div>
@@ -80,7 +78,7 @@
 					<div class="counter_grid">
 						<div class="icon_info">
 							<p class="counter">165</p>
-							<h4>Shows</h4>
+							<h4>Theaters</h4>
 
 						</div>
 					</div>
@@ -97,7 +95,7 @@
 				<div class="stats_left">
 					<div class="counter_grid">
 						<div class="icon_info">
-							<p class="counter">5063</p>
+							<p class="counter">5</p>
 							<h4>No. of Users</h4>
 
 						</div>
@@ -109,67 +107,7 @@
 	</div>
 	
 	<!-- **************** -->
-<!-- Image Slider for MEET US Section-->
-<div class="swiper-container" style="background-color: var(--theme-bg);">
-	<h1 id="swiper-container-h1">Meet Our Team</h1>
-	<div class="swiper-wrapper">
-		<div class="swiper-slide">
-			<div class="imgBx">
-				<img src="{{asset('user/assets/images/kishan.PNG')}}" style="width :100%; height: 100%">
-			</div>
-			<div class="details">
-				<h3 id="details-h3-1">Kishan Patel<br></h3>
-				<div class="p-sm">
-					<a href="https://www.linkedin.com/in/kishan-patel-a95827176/"><i class="fa fa-linkedin"></i></a>
-					<a href="https://www.instagram.com/kishann_20/"><i class="fa fa-instagram"></i></a>
-					<a href="https://github.com/Kishan207p"><i class="fa fa-github"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="swiper-slide">
-			<div class="imgBx">
-				<img src="{{asset('user/assets/images/sharvil.jpg')}}" style="width :100%; height: 100%">
-			</div>
-			<div class="details">
-				<h3 id="details-h3-2">Sharvil Patel<br></h3>
-				<div class="p-sm">
-					<a href="https://www.linkedin.com/in/sharvil-patel/"><i class="fa fa-linkedin"></i></a>
-					<a href="https://www.instagram.com/sharvil551/"><i class="fa fa-instagram"></i></a>
-					<a href="https://github.com/Sharvil24600"><i class="fa fa-github"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="swiper-slide">
-			<div class="imgBx">
-				<img src="{{asset('user/assets/images/Harsh (2).jpg')}}" style="width :100%; height: 100%">
-			</div>
-			<div class="details">
-				<h3 id="details-h3-3">Harsh Mange<br></h3>
-				<div class="p-sm">
-					<a href="https://in.linkedin.com/in/harshmange"><i class="fa fa-linkedin"></i></a>
-					<a href="https://www.instagram.com/im.h_r_s_h/"><i class="fa fa-instagram"></i></a>
-					<a href="https://github.com/harshmange44"><i class="fa fa-github"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="swiper-slide">
-			<div class="imgBx">
-				<img src="{{asset('user/assets/images/chavda.PNG')}}" style="width :100%; height: 100%">
-			</div>
-			<div class="details">
-				<h3 id="details-h3-4">Yugam Chavda<br></h3>
-				<div class="p-sm">
-					<a href="https://www.linkedin.com/in/yugamsinh-chavda-2b06ab18b/"><i class="fa fa-linkedin"></i></a>
-					<a href="https://www.instagram.com/yugamsinh_chavda/"><i class="fa fa-instagram"></i></a>
-					<a href="https://github.com/YugamsinhChavda"><i class="fa fa-github"></i></a>
-				</div>
-			</div>
-		</div>
 
-	</div>
-	<!-- Add Pagination -->
-	<div class="swiper-pagination"></div>
-</div>
 	<section class="w3l-clients" id="clients">
 		<!-- /grids -->
 		<!-- <div class="cusrtomer-layout py-5"> -->
@@ -184,15 +122,14 @@
 						<div class="testimonial-content">
 							<div class="testimonial">
 								<blockquote>
-									<q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-										voluptate rem ullam dolore!.</q>
+									<q>“Film is incredibly democratic and accessible, it’s probably the best option if you actually want to change the world, not just re-decorate it.”</q>
 								</blockquote>
 								<div class="testi-des">
 									<div class="test-img"><img src="{{asset('user/assets/images/team1.jpg')}}" class="img-fluid" alt="/">
 									</div>
 									<div class="peopl align-self">
-										<h3>Johnson smith</h3>
-										<p class="indentity">Washington</p>
+										<h3>Banksy</h3>
+										<p class="indentity">Bristol, England</p>
 									</div>
 								</div>
 							</div>
@@ -202,15 +139,14 @@
 						<div class="testimonial-content">
 							<div class="testimonial">
 								<blockquote>
-									<q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-										voluptate rem ullam dolore!.</q>
+									<q>Cinema is a language. It can say things — big, abstract things — and I love that about it. It’s a very special way of communicating.</q>
 								</blockquote>
 								<div class="testi-des">
 									<div class="test-img"><img src="{{asset('user/assets/images/team2.jpg')}}" class="img-fluid" alt="/">
 									</div>
 									<div class="peopl align-self">
-										<h3>Alexander leo</h3>
-										<p class="indentity">Washington</p>
+										<h3>Denis Villeneuve</h3>
+										<p class="indentity">Quebec, Canada</p>
 									</div>
 								</div>
 							</div>
@@ -220,15 +156,14 @@
 						<div class="testimonial-content">
 							<div class="testimonial">
 								<blockquote>
-									<q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-										voluptate rem ullam dolore!.</q>
+									<q>The best films are those that leave you thinking, that haunt you long after the credits roll. Cinema has the power to change how we see the world.</q>
 								</blockquote>
 								<div class="testi-des">
 									<div class="test-img"><img src="{{asset('user/assets/images/team3.jpg')}}" class="img-fluid" alt="/">
 									</div>
 									<div class="peopl align-self">
-										<h3>Roy Linderson</h3>
-										<p class="indentity">Washington</p>
+										<h3>Anonymous</h3>
+										<p class="indentity">Origin Unknown</p>
 									</div>
 								</div>
 							</div>
@@ -238,15 +173,14 @@
 						<div class="testimonial-content">
 							<div class="testimonial">
 								<blockquote>
-									<q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-										voluptate rem ullam dolore!.</q>
+									<q>Film is a truly magical medium. It has such power to transport audiences to other places, to inspire, to thrill, to move, and to create experiences that stay with us foreve.</q>
 								</blockquote>
 								<div class="testi-des">
 									<div class="test-img"><img src="{{asset('user/assets/images/team4.jpg')}}" class="img-fluid" alt="/">
 									</div>
 									<div class="peopl align-self">
-										<h3>Mike Thyson</h3>
-										<p class="indentity">Washington</p>
+										<h3>Peter Jackson</h3>
+										<p class="indentity">Wellington, New Zealand</p>
 									</div>
 								</div>
 							</div>
@@ -256,15 +190,14 @@
 						<div class="testimonial-content">
 							<div class="testimonial">
 								<blockquote>
-									<q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-										voluptate rem ullam dolore!.</q>
+									<q>Change the way we see things. They take us to other places, they open doors and minds. Movies are the memories of our lifetime, we need to keep them alive.</q>
 								</blockquote>
 								<div class="testi-des">
 									<div class="test-img"><img src="{{asset('user/assets/images/team2.jpg')}}" class="img-fluid" alt="/">
 									</div>
 									<div class="peopl align-self">
-										<h3>Laura gill</h3>
-										<p class="indentity">Washington</p>
+										<h3>Martin Scorsese</h3>
+										<p class="indentity">New York, USA</p>
 									</div>
 								</div>
 							</div>
@@ -274,15 +207,14 @@
 						<div class="testimonial-content">
 							<div class="testimonial">
 								<blockquote>
-									<q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-										voluptate rem ullam dolore!.</q>
+									<q>Film is incredibly democratic and accessible; It is probably one of the best option if you actually want to change the world, not only just redecorate it.</q>
 								</blockquote>
 								<div class="testi-des">
 									<div class="test-img"><img src="{{asset('user/assets/images/team3.jpg')}}" class="img-fluid" alt="/">
 									</div>
 									<div class="peopl align-self">
-										<h3>Smith Johnson</h3>
-										<p class="indentity">Washington</p>
+										<h3>Banksy</h3>
+										<p class="indentity">Bristol, UK</p>
 									</div>
 								</div>
 							</div>

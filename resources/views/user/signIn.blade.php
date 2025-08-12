@@ -96,7 +96,7 @@
                 <select name="role" id="role">
                   <option value="" disabled selected>Select Role</option>
                   <option value="user">User</option>
-                  <option value="admin">Admin</option>
+                  <!-- <option value="admin">Admin</option> -->
                 </select>
 				<span class="text-danger">
                   @error("role")

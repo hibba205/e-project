@@ -1,206 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Ticket</title>
-    <link rel="stylesheet" type="text/css" href="{{ asset('user/assets/css/e-ticket.css') }}">
+    <title>E-Ticket - MyShowz</title>
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700" rel="stylesheet">
-
+    <style>
+        body {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            background: #f9f9f9;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #df0e62;
+        }
+        .ticket {
+            background: #fff;
+            border: 4px solid #df0e62;
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .ticket img {
+            max-width: 300px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #df0e62;
+            padding: 12px;
+        }
+        th {
+            background: #df0e62;
+            color: #fff;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            background: #df0e62;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 18px;
+        }
+    </style>
 </head>
-
 <body>
-
+    <h1>Your E-Ticket - MyShowz</h1>
     <div class="ticket">
-        <div class="holes-top"></div>
-        <div class="title">
-            <p class="cinema">MyShowz Entertainment PRESENTS</p>
-            <p class="movie-title">Movie Name</p>
-        </div>
-        <div class="poster">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/25240/only-god-forgives.jpg"
-                alt="Movie: Only God Forgives" />
-        </div>
-        <div class="info">
-            <table>
-                <tr>
-                    <th>SCREEN</th>
-                    <th>ROW</th>
-                    <th>SEAT</th>
-                </tr>
-                <tr>
-                    <td class="bigger">18</td>
-                    <td class="bigger">H</td>
-                    <td class="bigger">24</td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th>PRICE</th>
-                    <th>DATE</th>
-                    <th>TIME</th>
-                </tr>
-                <tr>
-                    <td>Rs. 12.00</td>
-                    <td>4/13/21</td>
-                    <td>19:30</td>
-                </tr>
-            </table>
-        </div>
-        <!-- <div style="background-color: white;"> -->
-        <div class="holes-lower"></div>
-        <div class="serial">
-            <table class="barcode">
-                <tr>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                    <td style="background-color:black;"></td>
-                    <td style="background-color:white;"></td>
-                </tr>
-            </table>
-            <table class="numbers">
-                
-                <tr>
-                    <td>9</td>
-                    <td>1</td>
-                    <td>7</td>
-                    <td>3</td>
-                    <td>7</td>
-                    <td>5</td>
-                    <td>4</td>
-                    <td>4</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>7</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>2</td>
-                </tr>
-            </table>
-        </div>
+        <img src="{{ $movieImg }}" alt="{{ $movieTitle }}">
+        <h2>{{ $movieTitle }}</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Screen</th>
+                <th>Time</th>
+                <th>Seats</th>
+            </tr>
+            <tr>
+                <td>{{ $booking->day }}</td>
+                <td>{{ $booking->screen }}</td>
+                <td>{{ $booking->time }}</td>
+                <td>{{ $booking->seats }}</td>
+            </tr>
+        </table>
+        <a href="{{ url('user/index') }}" class="btn">Back to Home</a>
     </div>
 </body>
-
 </html>

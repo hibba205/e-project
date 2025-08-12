@@ -6,37 +6,21 @@
 				<h1><a class="navbar-brand" href="index.html"><span class="fa fa-play icon-log"
 							aria-hidden="true"></span>
 						MyShowz</a></h1>
-				<!-- if logo is image enable this   
-						<a class="navbar-brand" href="#index.html">
-							<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-						</a> -->
 				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
 					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 					aria-label="Toggle navigation">
-					<!-- <span class="navbar-toggler-icon"></span> -->
 					<span class="fa icon-expand fa-bars"></span>
 					<span class="fa icon-close fa-times"></span>
 				</button>
-
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="{{ asset('/') }}">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="{{ asset('/movies') }}">Movies</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="{{ asset('/about') }}">About</a>
-						</li>
-
-
-						<li class="nav-item">
-							<a class="nav-link" href="{{ asset('/contact') }}">Contact</a>
-						</li>
+						<li class="nav-item"><a class="nav-link" href="{{ url('/home') }}">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="{{ url('/user/movies') }}">Movies</a></li>
+						<li class="nav-item"><a class="nav-link" href="{{ url('/user/theaters') }}">Theaters</a></li>
+						<li class="nav-item"><a class="nav-link" href="{{ url('/about') }}">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('/contact') }}">Contact</a></li>
+						<li class="nav-item"><a class="nav-link" href="{{ url('/user/feedbacks') }}">Reviews</a></li>
 					</ul>
-
-					<!--/search-right-->
 					<!--/search-right-->
 					<div class="search-right">
 						<a href="#search" class="btn search-hny mr-lg-3 mt-lg-0 mt-4" title="search">Search <span
@@ -45,10 +29,8 @@
 						<div id="search" class="pop-overlay">
 							<div class="popup">
 								<form action="#" method="post" class="search-box">
-									<input type="search" placeholder="Search your Keyword" name="search"
-										required="required" autofocus="">
-									<button type="submit" class="btn"><span class="fa fa-search"
-											aria-hidden="true"></span></button>
+									<input type="search" placeholder="Search your Keyword" name="search" required="required" autofocus="">
+									<button type="submit" class="btn"><span class="fa fa-search" aria-hidden="true"></span></button>
 								</form>
 								<div class="browse-items">
 									<h3 class="hny-title two mt-md-5 mt-4">Browse all:</h3>

@@ -33,17 +33,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="{{ asset('/') }}">Home</a>
+              <a class="nav-link" href="{{ url('/home') }}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ asset('/movies') }}">Movies</a>
+              <a class="nav-link" href="{{ url('/user/movies') }}">Movies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ asset('/about') }}">About</a>
+							<a class="nav-link" href="{{ url('/user/theaters') }}">Theaters</a>
+						</li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url('/about') }}">About</a>
             </li>
 
             <li class="nav-item active">
-              <a class="nav-link" href="{{ asset('/contact') }}">Contact</a>
+              <a class="nav-link" href="{{ url('/contact') }}">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url('/user/feedbacks') }}">Reviews</a>
             </li>
           </ul>
 
@@ -80,7 +86,8 @@
     <p>If you have a question regarding our services,
       feel free to contact us using the form below.</p>
 
-    <form name="contact-us-form" action="#" onsubmit="return validateForm()">
+    <form name="contact-us-form" action="{{ url('/feedback/store') }}" method="POST">
+      @csrf
       <div class="row100" id="fname-row100">
         <div class="col">
           <div class="inputBox" id="fname-inputBox">
@@ -105,19 +112,19 @@
             <span class="line" id="email-line"></span>
           </div>
         </div>
-        <div class="col">
+        <!-- <div class="col">
           <div class="inputBox" id="tel-inputBox">
             <input type="tel" name="m-num" onclick="triggerAnim('tel')" />
             <span class="text">Mobile Number</span>
             <span class="line" id="tel-line"></span>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="row100">
         <div class="col">
           <div class="inputBox textarea">
             <textarea name="msg"></textarea>
-            <span class="text">Type your message Here...</span>
+            <span class="text">Share your experience...</span>
             <span class="line"></span>
           </div>
         </div>
@@ -209,6 +216,12 @@
         }
       });
     });
+    @if(session('success'))
+      <div class="alert alert-success">
+      {{ session('success') }}
+      </div>
+    @endif
+
   </script>
   <script src="assets/js/bootstrap.min.js"></script>
 </body>

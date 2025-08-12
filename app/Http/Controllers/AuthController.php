@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\feedback;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -52,6 +53,12 @@ class AuthController extends Controller
     //     $request->session()->regenerateToken();
     //     return redirect('/')->with('success', 'Logged out successfully.');
     // }
+    
+    public function home()
+{
+    $users = User::all(); // fetch all users from the database
+    return view('user/index');
+}
     public function index()
 {
     $users = User::all(); // fetch all users from the database
@@ -121,12 +128,16 @@ class AuthController extends Controller
     public function dashboard()
     {
         $user = Auth::user();
-        if($user->role === 'admin' || $user->role === 'manager'){
-            return view('admin/dashboard', compact('user'));
+        if($user->role === 'admin'){
+            $feedbacks = Feedback::latest()->paginate(20);
+        return view('admin.dashboard', compact('user', 'feedbacks'));
         }
 
         if($user->role === 'user'){
             return view('user.index', compact('user'));
         }
+        
     }
+    
+  
 }
